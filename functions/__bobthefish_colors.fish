@@ -537,14 +537,14 @@ function __bobthefish_colors -S -a color_scheme -d 'Define colors used by bobthe
             set -l fg fbf1c7 ebdbb2 d5c4a1 a89984
             set -l bg 504945 282828
 
-            set -x color_initial_segment_exit $red[1] $bg[2] --bold
-            set -x color_initial_segment_su $fg[1] $green[2] --bold
-            set -x color_initial_segment_jobs $fg[1] $aqua[2] --bold
+            set -x color_initial_segment_exit $red[2] $fg[2] --bold
+            set -x color_initial_segment_su $bg[2] $green[2] --bold
+            set -x color_initial_segment_jobs $bg[2] $aqua[2] --bold
 
             set -x color_path $bg[1] $fg[2]
             set -x color_path_basename $bg[1] $fg[2] --bold
-            set -x color_path_nowrite $red[1] $bg[2]
-            set -x color_path_nowrite_basename $red[1] $bg[2] --bold
+            set -x color_path_nowrite $red[2] $fg[1]
+            set -x color_path_nowrite_basename $red[2] $fg[1] --bold
 
             set -x color_repo $green[2] $fg[1]
             set -x color_repo_work_tree $bg[1] $fg[2] --bold
@@ -557,9 +557,9 @@ function __bobthefish_colors -S -a color_scheme -d 'Define colors used by bobthe
 
             set -x color_vagrant $blue[2] $fg[2] --bold
             set -x color_k8s $green[2] $fg[2] --bold
-            set -x color_username $fg[3] $blue[2] --bold
-            set -x color_hostname $fg[3] $blue[2]
-            set -x color_rvm $red[2] $bg[2] --bold
+            set -x color_username $fg[3] $bg[2] --bold
+            set -x color_hostname $fg[3] $bg[2]
+            set -x color_rvm $red[1] $bg[2] --bold
             set -x color_nvm $green[1] $fg[2] --bold
             set -x color_virtualfish $blue[2] $fg[2] --bold
             set -x color_virtualgo $blue[2] $fg[2] --bold
